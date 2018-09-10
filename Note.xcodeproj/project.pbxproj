@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4514442240C28742981317 /* libPods-Note.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B02C3C7F3A8263594EE343 /* libPods-Note.a */; };
+		B29C57AF21265AAB0048714D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57AE21265AAB0048714D /* AppDelegate.m */; };
+		B29C57B221265AAB0048714D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57B121265AAB0048714D /* ViewController.m */; };
+		B29C57B521265AAB0048714D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C57B321265AAB0048714D /* Main.storyboard */; };
+		B29C57B721265AB50048714D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29C57B621265AB50048714D /* Assets.xcassets */; };
+		B29C57BA21265AB50048714D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C57B821265AB50048714D /* LaunchScreen.storyboard */; };
+		B29C57BD21265AB50048714D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57BC21265AB50048714D /* main.m */; };
+		B29C57CC21265BB20048714D /* NoteDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57C821265BB20048714D /* NoteDayModel.m */; };
+		B29C57CD21265BB20048714D /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57C921265BB20048714D /* NoteModel.m */; };
+		B29C57D021265BC70048714D /* HQToastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57CF21265BC70048714D /* HQToastManager.m */; };
+		B29C57D521265BDB0048714D /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57D321265BDA0048714D /* RealmManager.m */; };
+		B29C57D621265BDB0048714D /* NoteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57D421265BDA0048714D /* NoteViewModel.m */; };
+		B29C57DB21265BE50048714D /* NSDate+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57D821265BE50048714D /* NSDate+extension.m */; };
+		B29C57DC21265BE50048714D /* UIColor+hex2color.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57D921265BE50048714D /* UIColor+hex2color.m */; };
+		B29C57E121265C2A0048714D /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57E021265C2A0048714D /* EditViewController.m */; };
+		B29C57E521265C630048714D /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57E321265C630048714D /* NoteCell.m */; };
+		B29C57E621265C630048714D /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29C57E421265C630048714D /* NoteCell.xib */; };
+		B29C57E821265D600048714D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B29C57E721265D5F0048714D /* libz.tbd */; };
+		B29C57EA21265D680048714D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B29C57E921265D680048714D /* libc++.tbd */; };
+		B29C57EE212660D70048714D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29C57ED212660D70048714D /* CloudKit.framework */; };
+		B29C57F2212661C00048714D /* CloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57F1212661C00048714D /* CloudManager.m */; };
+		B29C57F52126AA630048714D /* MagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57F42126AA630048714D /* MagicMoveTransition.m */; };
+		B29C57F82126AD790048714D /* MagicMoveInverseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C57F72126AD790048714D /* MagicMoveInverseTransition.m */; };
+		B29C58012126C6550048714D /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C58002126C6550048714D /* IntentHandler.m */; };
+		B29C58092126C6550048714D /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29C58082126C6550048714D /* IntentsUI.framework */; };
+		B29C580D2126C6550048714D /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29C580C2126C6550048714D /* IntentViewController.m */; };
+		B29C58102126C6550048714D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29C580E2126C6550048714D /* MainInterface.storyboard */; };
+		B29C58142126C6550048714D /* SiriIntentsExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B29C58072126C6550048714D /* SiriIntentsExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B29C58172126C6550048714D /* SiriIntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B29C57FD2126C6550048714D /* SiriIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B29C58122126C6550048714D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29C57A221265AAB0048714D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29C58062126C6550048714D;
+			remoteInfo = SiriIntentsExtensionUI;
+		};
+		B29C58152126C6550048714D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29C57A221265AAB0048714D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B29C57FC2126C6550048714D;
+			remoteInfo = SiriIntentsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B29C581E2126C6550048714D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B29C58142126C6550048714D /* SiriIntentsExtensionUI.appex in Embed App Extensions */,
+				B29C58172126C6550048714D /* SiriIntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B205A9687575035C084D4E8 /* Pods-Note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.release.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.release.xcconfig"; sourceTree = "<group>"; };
+		11B02C3C7F3A8263594EE343 /* libPods-Note.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Note.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8ED36B5DC0370D94578B66 /* Pods-Note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Note.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Note/Pods-Note.debug.xcconfig"; sourceTree = "<group>"; };
+		B29C57AA21265AAB0048714D /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29C57AD21265AAB0048714D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B29C57AE21265AAB0048714D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B29C57B021265AAB0048714D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B29C57B121265AAB0048714D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B29C57B421265AAB0048714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B29C57B621265AB50048714D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B29C57B921265AB50048714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B29C57BB21265AB50048714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29C57BC21265AB50048714D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B29C57C821265BB20048714D /* NoteDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDayModel.m; sourceTree = "<group>"; };
+		B29C57C921265BB20048714D /* NoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
+		B29C57CA21265BB20048714D /* NoteDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDayModel.h; sourceTree = "<group>"; };
+		B29C57CB21265BB20048714D /* NoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
+		B29C57CE21265BC70048714D /* HQToastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQToastManager.h; sourceTree = "<group>"; };
+		B29C57CF21265BC70048714D /* HQToastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQToastManager.m; sourceTree = "<group>"; };
+		B29C57D121265BDA0048714D /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		B29C57D221265BDA0048714D /* NoteViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewModel.h; sourceTree = "<group>"; };
+		B29C57D321265BDA0048714D /* RealmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
+		B29C57D421265BDA0048714D /* NoteViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewModel.m; sourceTree = "<group>"; };
+		B29C57D721265BE50048714D /* NSDate+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extension.h"; sourceTree = "<group>"; };
+		B29C57D821265BE50048714D /* NSDate+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extension.m"; sourceTree = "<group>"; };
+		B29C57D921265BE50048714D /* UIColor+hex2color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex2color.m"; sourceTree = "<group>"; };
+		B29C57DA21265BE50048714D /* UIColor+hex2color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex2color.h"; sourceTree = "<group>"; };
+		B29C57DF21265C2A0048714D /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		B29C57E021265C2A0048714D /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		B29C57E221265C630048714D /* NoteCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
+		B29C57E321265C630048714D /* NoteCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
+		B29C57E421265C630048714D /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		B29C57E721265D5F0048714D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B29C57E921265D680048714D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B29C57EC212660B40048714D /* Note.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Note.entitlements; sourceTree = "<group>"; };
+		B29C57ED212660D70048714D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B29C57F0212661C00048714D /* CloudManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudManager.h; sourceTree = "<group>"; };
+		B29C57F1212661C00048714D /* CloudManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudManager.m; sourceTree = "<group>"; };
+		B29C57F32126AA630048714D /* MagicMoveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicMoveTransition.h; sourceTree = "<group>"; };
+		B29C57F42126AA630048714D /* MagicMoveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicMoveTransition.m; sourceTree = "<group>"; };
+		B29C57F62126AD790048714D /* MagicMoveInverseTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicMoveInverseTransition.h; sourceTree = "<group>"; };
+		B29C57F72126AD790048714D /* MagicMoveInverseTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicMoveInverseTransition.m; sourceTree = "<group>"; };
+		B29C57FD2126C6550048714D /* SiriIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29C57FF2126C6550048714D /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		B29C58002126C6550048714D /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		B29C58022126C6550048714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29C58072126C6550048714D /* SiriIntentsExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentsExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29C58082126C6550048714D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		B29C580B2126C6550048714D /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		B29C580C2126C6550048714D /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		B29C580F2126C6550048714D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B29C58112126C6550048714D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B29C57A721265AAB0048714D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C57EE212660D70048714D /* CloudKit.framework in Frameworks */,
+				B29C57EA21265D680048714D /* libc++.tbd in Frameworks */,
+				B29C57E821265D600048714D /* libz.tbd in Frameworks */,
+				0E4514442240C28742981317 /* libPods-Note.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C57FA2126C6550048714D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C58042126C6550048714D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C58092126C6550048714D /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B4EDF6C16D37C92B38BE245 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F8ED36B5DC0370D94578B66 /* Pods-Note.debug.xcconfig */,
+				0B205A9687575035C084D4E8 /* Pods-Note.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B29C57A121265AAB0048714D = {
+			isa = PBXGroup;
+			children = (
+				B29C57AC21265AAB0048714D /* Note */,
+				B29C57FE2126C6550048714D /* SiriIntentsExtension */,
+				B29C580A2126C6550048714D /* SiriIntentsExtensionUI */,
+				B29C57AB21265AAB0048714D /* Products */,
+				0B4EDF6C16D37C92B38BE245 /* Pods */,
+				D635DD2479DA7568FBA65678 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B29C57AB21265AAB0048714D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57AA21265AAB0048714D /* Note.app */,
+				B29C57FD2126C6550048714D /* SiriIntentsExtension.appex */,
+				B29C58072126C6550048714D /* SiriIntentsExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B29C57AC21265AAB0048714D /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57EC212660B40048714D /* Note.entitlements */,
+				B29C57EF212661AB0048714D /* iCloud */,
+				B29C57EB21265E870048714D /* View */,
+				B29C57C721265B980048714D /* Model */,
+				B29C57C621265B8F0048714D /* Component */,
+				B29C57C521265B870048714D /* ViewModel */,
+				B29C57C421265B7F0048714D /* Extension */,
+				B29C57AD21265AAB0048714D /* AppDelegate.h */,
+				B29C57AE21265AAB0048714D /* AppDelegate.m */,
+				B29C57B321265AAB0048714D /* Main.storyboard */,
+				B29C57B621265AB50048714D /* Assets.xcassets */,
+				B29C57B821265AB50048714D /* LaunchScreen.storyboard */,
+				B29C57BB21265AB50048714D /* Info.plist */,
+				B29C57BC21265AB50048714D /* main.m */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		B29C57C421265B7F0048714D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57D721265BE50048714D /* NSDate+extension.h */,
+				B29C57D821265BE50048714D /* NSDate+extension.m */,
+				B29C57DA21265BE50048714D /* UIColor+hex2color.h */,
+				B29C57D921265BE50048714D /* UIColor+hex2color.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B29C57C521265B870048714D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57D221265BDA0048714D /* NoteViewModel.h */,
+				B29C57D421265BDA0048714D /* NoteViewModel.m */,
+				B29C57D121265BDA0048714D /* RealmManager.h */,
+				B29C57D321265BDA0048714D /* RealmManager.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B29C57C621265B8F0048714D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57CE21265BC70048714D /* HQToastManager.h */,
+				B29C57CF21265BC70048714D /* HQToastManager.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B29C57C721265B980048714D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57CA21265BB20048714D /* NoteDayModel.h */,
+				B29C57C821265BB20048714D /* NoteDayModel.m */,
+				B29C57CB21265BB20048714D /* NoteModel.h */,
+				B29C57C921265BB20048714D /* NoteModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29C57EB21265E870048714D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57B021265AAB0048714D /* ViewController.h */,
+				B29C57B121265AAB0048714D /* ViewController.m */,
+				B29C57DF21265C2A0048714D /* EditViewController.h */,
+				B29C57E021265C2A0048714D /* EditViewController.m */,
+				B29C57E221265C630048714D /* NoteCell.h */,
+				B29C57E321265C630048714D /* NoteCell.m */,
+				B29C57E421265C630048714D /* NoteCell.xib */,
+				B29C57F32126AA630048714D /* MagicMoveTransition.h */,
+				B29C57F42126AA630048714D /* MagicMoveTransition.m */,
+				B29C57F62126AD790048714D /* MagicMoveInverseTransition.h */,
+				B29C57F72126AD790048714D /* MagicMoveInverseTransition.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B29C57EF212661AB0048714D /* iCloud */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57F0212661C00048714D /* CloudManager.h */,
+				B29C57F1212661C00048714D /* CloudManager.m */,
+			);
+			path = iCloud;
+			sourceTree = "<group>";
+		};
+		B29C57FE2126C6550048714D /* SiriIntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57FF2126C6550048714D /* IntentHandler.h */,
+				B29C58002126C6550048714D /* IntentHandler.m */,
+				B29C58022126C6550048714D /* Info.plist */,
+			);
+			path = SiriIntentsExtension;
+			sourceTree = "<group>";
+		};
+		B29C580A2126C6550048714D /* SiriIntentsExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				B29C580B2126C6550048714D /* IntentViewController.h */,
+				B29C580C2126C6550048714D /* IntentViewController.m */,
+				B29C580E2126C6550048714D /* MainInterface.storyboard */,
+				B29C58112126C6550048714D /* Info.plist */,
+			);
+			path = SiriIntentsExtensionUI;
+			sourceTree = "<group>";
+		};
+		D635DD2479DA7568FBA65678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29C57ED212660D70048714D /* CloudKit.framework */,
+				B29C57E921265D680048714D /* libc++.tbd */,
+				B29C57E721265D5F0048714D /* libz.tbd */,
+				11B02C3C7F3A8263594EE343 /* libPods-Note.a */,
+				B29C58082126C6550048714D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B29C57A921265AAB0048714D /* Note */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29C57C021265AB50048714D /* Build configuration list for PBXNativeTarget "Note" */;
+			buildPhases = (
+				B2F649F66D079AD68AEB98F0 /* [CP] Check Pods Manifest.lock */,
+				B29C57A621265AAB0048714D /* Sources */,
+				B29C57A721265AAB0048714D /* Frameworks */,
+				B29C57A821265AAB0048714D /* Resources */,
+				B29C581E2126C6550048714D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29C58132126C6550048714D /* PBXTargetDependency */,
+				B29C58162126C6550048714D /* PBXTargetDependency */,
+			);
+			name = Note;
+			productName = Note;
+			productReference = B29C57AA21265AAB0048714D /* Note.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B29C57FC2126C6550048714D /* SiriIntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29C581B2126C6550048714D /* Build configuration list for PBXNativeTarget "SiriIntentsExtension" */;
+			buildPhases = (
+				B29C57F92126C6550048714D /* Sources */,
+				B29C57FA2126C6550048714D /* Frameworks */,
+				B29C57FB2126C6550048714D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentsExtension;
+			productName = SiriIntentsExtension;
+			productReference = B29C57FD2126C6550048714D /* SiriIntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B29C58062126C6550048714D /* SiriIntentsExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29C58182126C6550048714D /* Build configuration list for PBXNativeTarget "SiriIntentsExtensionUI" */;
+			buildPhases = (
+				B29C58032126C6550048714D /* Sources */,
+				B29C58042126C6550048714D /* Frameworks */,
+				B29C58052126C6550048714D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriIntentsExtensionUI;
+			productName = SiriIntentsExtensionUI;
+			productReference = B29C58072126C6550048714D /* SiriIntentsExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B29C57A221265AAB0048714D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = lujiuyin;
+				TargetAttributes = {
+					B29C57A921265AAB0048714D = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					B29C57FC2126C6550048714D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B29C58062126C6550048714D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B29C57A521265AAB0048714D /* Build configuration list for PBXProject "Note" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B29C57A121265AAB0048714D;
+			productRefGroup = B29C57AB21265AAB0048714D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B29C57A921265AAB0048714D /* Note */,
+				B29C57FC2126C6550048714D /* SiriIntentsExtension */,
+				B29C58062126C6550048714D /* SiriIntentsExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B29C57A821265AAB0048714D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C57BA21265AB50048714D /* LaunchScreen.storyboard in Resources */,
+				B29C57B721265AB50048714D /* Assets.xcassets in Resources */,
+				B29C57B521265AAB0048714D /* Main.storyboard in Resources */,
+				B29C57E621265C630048714D /* NoteCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C57FB2126C6550048714D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C58052126C6550048714D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C58102126C6550048714D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2F649F66D079AD68AEB98F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Note-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B29C57A621265AAB0048714D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C57D021265BC70048714D /* HQToastManager.m in Sources */,
+				B29C57B221265AAB0048714D /* ViewController.m in Sources */,
+				B29C57F2212661C00048714D /* CloudManager.m in Sources */,
+				B29C57DC21265BE50048714D /* UIColor+hex2color.m in Sources */,
+				B29C57F82126AD790048714D /* MagicMoveInverseTransition.m in Sources */,
+				B29C57D521265BDB0048714D /* RealmManager.m in Sources */,
+				B29C57CD21265BB20048714D /* NoteModel.m in Sources */,
+				B29C57D621265BDB0048714D /* NoteViewModel.m in Sources */,
+				B29C57DB21265BE50048714D /* NSDate+extension.m in Sources */,
+				B29C57E521265C630048714D /* NoteCell.m in Sources */,
+				B29C57BD21265AB50048714D /* main.m in Sources */,
+				B29C57E121265C2A0048714D /* EditViewController.m in Sources */,
+				B29C57CC21265BB20048714D /* NoteDayModel.m in Sources */,
+				B29C57AF21265AAB0048714D /* AppDelegate.m in Sources */,
+				B29C57F52126AA630048714D /* MagicMoveTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C57F92126C6550048714D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C58012126C6550048714D /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29C58032126C6550048714D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C580D2126C6550048714D /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B29C58132126C6550048714D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29C58062126C6550048714D /* SiriIntentsExtensionUI */;
+			targetProxy = B29C58122126C6550048714D /* PBXContainerItemProxy */;
+		};
+		B29C58162126C6550048714D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B29C57FC2126C6550048714D /* SiriIntentsExtension */;
+			targetProxy = B29C58152126C6550048714D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B29C57B321265AAB0048714D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B29C57B421265AAB0048714D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B29C57B821265AB50048714D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B29C57B921265AB50048714D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B29C580E2126C6550048714D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B29C580F2126C6550048714D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B29C57BE21265AB50048714D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B29C57BF21265AB50048714D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B29C57C121265AB50048714D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8ED36B5DC0370D94578B66 /* Pods-Note.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Note/Note.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Note/Library",
+				);
+				INFOPLIST_FILE = Note/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B29C57C221265AB50048714D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B205A9687575035C084D4E8 /* Pods-Note.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Note/Note.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Note/Library",
+				);
+				INFOPLIST_FILE = Note/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B29C58192126C6550048714D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				INFOPLIST_FILE = SiriIntentsExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note.SiriIntentsExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B29C581A2126C6550048714D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				INFOPLIST_FILE = SiriIntentsExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note.SiriIntentsExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B29C581C2126C6550048714D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				INFOPLIST_FILE = SiriIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note.SiriIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B29C581D2126C6550048714D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 798G886V8N;
+				INFOPLIST_FILE = SiriIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanqiu.Note.SiriIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B29C57A521265AAB0048714D /* Build configuration list for PBXProject "Note" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29C57BE21265AB50048714D /* Debug */,
+				B29C57BF21265AB50048714D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29C57C021265AB50048714D /* Build configuration list for PBXNativeTarget "Note" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29C57C121265AB50048714D /* Debug */,
+				B29C57C221265AB50048714D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29C58182126C6550048714D /* Build configuration list for PBXNativeTarget "SiriIntentsExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29C58192126C6550048714D /* Debug */,
+				B29C581A2126C6550048714D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29C581B2126C6550048714D /* Build configuration list for PBXNativeTarget "SiriIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29C581C2126C6550048714D /* Debug */,
+				B29C581D2126C6550048714D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B29C57A221265AAB0048714D /* Project object */;
+}
